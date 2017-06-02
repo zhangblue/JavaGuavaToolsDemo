@@ -102,4 +102,20 @@ public class GuavaFilesTools {
         }
         return largeLineProcessor;
     }
+
+
+    /***
+     * 向文件中追加内容
+     * @param strDelete
+     * @param file
+     */
+    public void appendContentToFile(List<String> strDelete, File file) {
+        for (String strLine : strDelete) {
+            try {
+                Files.append(strLine+"\n", file, Charset.defaultCharset());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
