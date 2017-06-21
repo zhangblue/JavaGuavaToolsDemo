@@ -73,6 +73,17 @@ public class StringTools {
     }
 
     /**
+     * 删除字符串开头与结尾的内容
+     *
+     * @param strLine
+     * @param keywords
+     * @return
+     */
+    public String trimBeginKey(String strLine, String keywords) {
+        return CharMatcher.anyOf(keywords).trimLeadingFrom(strLine);
+    }
+
+    /**
      * 删除字符串中的制定内容
      *
      * @param strLine

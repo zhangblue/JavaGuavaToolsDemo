@@ -106,11 +106,11 @@ public class GuavaFilesTools {
 
     /***
      * 向文件中追加内容
-     * @param strDelete
+     * @param strContent
      * @param file
      */
-    public void appendContentToFile(List<String> strDelete, File file) {
-        for (String strLine : strDelete) {
+    public void appendContentToFile(List<String> strContent, File file) {
+        for (String strLine : strContent) {
             try {
                 Files.append(strLine+"\n", file, Charset.defaultCharset());
             } catch (IOException e) {
