@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by zhangdi on 2017/06/02.
  */
-public class StringTools {
+public class GuavaStringTools {
 
 
     //--------字符串连接器--------
